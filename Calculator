@@ -1,0 +1,201 @@
+<html> 
+
+   <head> 
+
+      <script> 
+
+         //function that display value 
+
+         function dis(val) 
+
+         { 
+
+             document.getElementById("result").value+=val 
+
+         } 
+
+           
+
+         //function that evaluates the digit and return result 
+
+         function solve() 
+
+         { 
+
+             let x = document.getElementById("result").value 
+
+             let y = eval(x) 
+
+             document.getElementById("result").value = y 
+
+         } 
+
+           
+
+         //function that clear the display 
+
+         function clr() 
+
+         { 
+
+             document.getElementById("result").value = "" 
+
+         } 
+
+      </script> 
+
+      <!-- for styling -->
+
+      <style> 
+
+         .title{ 
+        
+         margin: auto;
+         margin-bottom: 10px;
+         background-color: rgb(12, 12, 11);
+
+         text-align:center; 
+
+         width: 220px; 
+
+         color: #CD5C5C; 
+
+         border: solid black 2px; 
+
+         } 
+
+  
+
+         input[type="button"] 
+
+         {
+         
+         background-color: lightgrey; 
+
+         color: black; 
+
+         border: solid black 2px; 
+
+         width:100% 
+
+         } 
+
+  
+
+         input[type="text"] 
+
+         { 
+        
+
+         background-color:white; 
+
+         border: solid black 2px; 
+
+         width:100% 
+
+         } 
+
+      </style> 
+
+   </head> 
+
+   <!-- create table -->
+
+   <body align="center" style="background-color: A2B5CD;"> 
+      <h2 style="background-color: grey;">WELCOME TO MY PROJECT</h2>
+
+      <div class = title >
+            <div>
+                  <B>CALCULATOR</B>
+               
+
+                  <p>By- Suraj Sonawane</p>
+
+               
+                  <p> Calculate here </p>
+            </div>
+         
+            <table border="5" align="center"> 
+
+               <tr> 
+
+                  <td colspan="3"><input type="text" id="result"/></td> 
+
+                  <!-- clr() function will call clr to clear all value -->
+
+                  <td><input type="button" value="c" onclick="clr()"/> </td> 
+
+               </tr> 
+
+               <tr> 
+
+                  <!-- create button and assign value to each button -->
+
+                  <!-- dis("1") will call function dis to display value -->
+
+                  <td><input type="button" value="1" onclick="dis('1')"/> </td> 
+
+                  <td><input type="button" value="2" onclick="dis('2')"/> </td> 
+
+                  <td><input type="button" value="3" onclick="dis('3')"/> </td> 
+
+                  <td><input type="button" value="/" onclick="dis('/')"/> </td> 
+
+               </tr> 
+
+               <tr> 
+
+                  <td><input type="button" value="4" onclick="dis('4')"/> </td> 
+
+                  <td><input type="button" value="5" onclick="dis('5')"/> </td> 
+
+                  <td><input type="button" value="6" onclick="dis('6')"/> </td> 
+
+                  <td><input type="button" value="-" onclick="dis('-')"/> </td> 
+
+               </tr> 
+
+               <tr> 
+
+                  <td><input type="button" value="7" onclick="dis('7')"/> </td> 
+
+                  <td><input type="button" value="8" onclick="dis('8')"/> </td> 
+
+                  <td><input type="button" value="9" onclick="dis('9')"/> </td> 
+
+                  <td><input type="button" value="+" onclick="dis('+')"/> </td> 
+
+               </tr> 
+
+               <tr> 
+
+                  <td><input type="button" value="." onclick="dis('.')"/> </td> 
+
+                  <td><input type="button" value="0" onclick="dis('0')"/> </td> 
+
+                  <!-- solve function call function solve to evaluate value -->
+
+                  <td><input type="button" value="=" onclick="solve()"/> </td> 
+
+                  <td><input type="button" value="*" onclick="dis('*')"/> </td> 
+
+               </tr> 
+
+            </table> 
+      </div>
+      <hr>
+     <!--- <p>
+         1) A calculator is a device that performs arithmetic operations on numbers. 
+      </p>
+      <p>
+         2) The simplest calculators can do only addition, subtraction, multiplication, and division.
+      </p>
+      <p>
+         3) Simple Calculator helps users to calculate simple calculations with great speed and accessibility. 
+      </p>
+      -->
+      
+            <!--img  src="Sanjivani.jpg" height="150"width="550"alt="image is not found"-->
+   </body> 
+
+</html>  
